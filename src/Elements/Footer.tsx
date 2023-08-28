@@ -1,8 +1,8 @@
-const Header = () => {
+const Footer = () => {
   return (
-    <footer className="flex py-3 items-center justify-around w-screen bg-[hsla(201, 11%, 66%, 0.5)]">
+    <footer className="flex py-3 items-center justify-around w-screen bg-[hsl(201,11%,66%,0.2)] md:flex flex-col gap-10 md:py-[51px] md:text-center">
       <img src="./logo.svg" alt="logo" className="w-14 h-14" />
-      <div className="grid grid-cols-3 grid-rows-2 gap-5">
+      <div className="grid grid-cols-3 grid-rows-2 gap-5 md:flex flex-col items-center">
         <a
           href="#"
           className="text-dark-grayish-blue hover:text-strong-cyan transition-colors"
@@ -64,4 +64,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Footer;

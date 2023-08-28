@@ -1,13 +1,18 @@
 import Block from "./Elements/Block";
-import Header from "./Elements/Header";
+import Header from "./Elements/Footer";
 
 const App = () => {
   return (
-    <main className="flex flex-col items-center gap-[123px] pt-[123px]">
+    <main className="flex flex-col items-center gap-[123px] pt-[123px] md:px-8 overflow-x-hidden">
       <img
         src="./bg-header-desktop.png"
         alt="bg header desktop"
-        className="absolute w-screen object-cover top-0 left-0"
+        className="absolute w-screen object-cover top-0 left-0 md:hidden -z-10"
+      />
+      <img
+        src="./bg-header-mobile.png"
+        alt="bg header mobile"
+        className="absolute w-screen object-cover top-0 left-0 md:block hidden -z-10"
       />
       <Block
         isImg={true}
@@ -25,10 +30,10 @@ const App = () => {
           <img
             src="./image-computer.png"
             alt="image computer"
-            className="relative -left-[200px]"
+            className="relative -left-[200px] md:left-0"
           />
         </div>
-        <div className="w-[337px] relative -left-[100px] flex flex-col justify-between gap-10">
+        <div className="w-[337px] relative -left-[100px] flex flex-col justify-between gap-10 md:left-0">
           <div>
             <h2 className="text-3xl font-bold text-dark-grayish-blue">
               Quick Search

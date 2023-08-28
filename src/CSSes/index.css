@@ -4,4 +4,8 @@
 @tailwind utilities;
 :root {
   font-family: "Bai Jamjuree", sans-serif;
+}
+
+section {
+  @apply w-[692px] flex flex-col items-center justify-center gap-5 text-center md:w-auto;
 }/*# sourceMappingURL=index.css.map */
