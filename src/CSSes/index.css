@@ -6,6 +6,32 @@
   font-family: "Bai Jamjuree", sans-serif;
 }
 
-section {
-  @apply w-[692px] flex flex-col items-center justify-center gap-5 text-center md:w-auto;
+.revealT {
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.revealT.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.revealL {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.revealL.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.revealR {
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.revealR.active {
+  transform: translateX(0);
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */

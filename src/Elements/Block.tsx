@@ -8,7 +8,7 @@ interface BlockProps {
 
 const Block = ({ isImg, isH1, h1, p, isButtons }: BlockProps) => {
   return (
-    <section>
+    <section className="w-[692px] flex flex-col items-center justify-center gap-5 text-center md:w-auto revealL">
       {isImg && (
         <img
           src="./logo.svg"

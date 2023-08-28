@@ -1,0 +1,29 @@
+.revealT {
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.revealL {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+  &.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.revealR {
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+  &.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
